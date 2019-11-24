@@ -1,0 +1,36 @@
+
+/**
+ * Alumna:Salazar Vásquez Viviana Isabel
+ * No. de control:19161403 
+ * Hora:11am-12pm
+ * 
+ */
+import java.util.Scanner;
+public class Letra
+{
+   public void comienzo(){
+       Scanner sc=new Scanner(System.in);
+       String arg[]={"Hola","mundo","gaturro","digo","clubpenguin","cocacola"};
+       System.out.println("Ingresa una letra");
+       char dato=sc.next().charAt(0);
+       int cont=0;
+       String aux="";
+       for( int x=0;x<arg.length;x++){
+              if(arg[x].charAt(0)==dato){
+             cont++;
+             aux=aux+arg[x];
+             }else{
+                }
+             }
+       if(cont==0){
+             System.out.println("No hay ninguna palabra que comiece con esa letra en el arreglo");
+            }else{
+        System.out.println("En el arreglo hay "+cont+" palabras que empiezan con "+dato+ " y son " +aux);
+    }
+       }
+   public static void main(String args[]){
+       Letra letra = new Letra();
+       letra.comienzo();
+     }
+}
+

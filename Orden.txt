@@ -1,0 +1,23 @@
+
+
+/**
+ * Alumna: Viviana Isabel Salazar Vásquez
+ * No. control: 19161403
+ * Hora: 11am-12pm 
+ * 
+ */
+public class Orden{
+  public void cambiar(){
+        String palabras[]= new String []{"A","Z","O","AS","OS"};
+        String aux="";
+        for(int x=0;x<Math.floor(palabras.length/2);x++){
+            aux=palabras[palabras.length-(x+2)];
+            palabras[palabras.length-(x+1)]=palabras[x];
+            palabras[x]=aux;
+        }
+      }
+  public static void main(String args[]){
+        Orden orden = new Orden();
+        orden.cambiar();        
+        }
+    }
